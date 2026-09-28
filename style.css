@@ -6,15 +6,18 @@ h1{
     font-style: italic;
 }
 .primeira{
-    width:60;
+    width:60%;
 }
 .segundo{
-    width:40;
+    width:40%;
 }
 .terceiro{
-    width:40;
+    width:40%;
 }
 .quarto{
-    width:40;
+    width:40%;
+}
+.quinto{
+    width:40%;
 }
 
