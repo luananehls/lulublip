@@ -1,5 +1,6 @@
 body{
     background-color: rgb(186, 232, 232);
+     text-align: center;
 }
 h1{ 
     color: black;
@@ -7,17 +8,25 @@ h1{
 }
 .primeira{
     width:10%;
+     text-align: center;
 }
 .segundo{
     width:10%;
+     text-align: center;
 }
 .terceiro{
     width:10%;
+     text-align: center;
 }
 .quarto{
     width:10%;
+     text-align: center;
 }
 .quinto{
     width:10%;
+     text-align: center;
 }
-
+.lista{
+    font-style: italic;
+    text-decoration: overline;
+}
