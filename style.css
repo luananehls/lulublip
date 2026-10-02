@@ -8,31 +8,30 @@ h1{
     font-style: italic;
 }
 .primeira{
-    width:10%;
+    width:50%;
      text-align: center;
 }
 
 .segundo{
-    width:10%;
+    width:50%;
      text-align: center;
 }
 
 .terceiro{
-    width:10%;
+    width:50%;
      text-align: center;
 }
 
 .quarto{
-    width:10%;
+    width:50%;
      text-align: center;
 }
 
 .quinto{
-    width:10%;
+    width:50%;
      text-align: center;
 }
 
 .lista{
     font-style: italic;
-    text-decoration: overline;
 }
