@@ -45,6 +45,160 @@ h2{
    width:40%;
    text-align: center; 
 }
+/* PASSAPORTE DOS SONHOS */
+
+.passaporte {
+padding: 65px 20px;
+background: linear-gradient(135deg, #fff7f8, #f3f6ff);
+color: #34364f;
+}
+
+.passaporte-header {
+max-width: 650px;
+margin: 0 auto 35px;
+text-align: center;
+}
+
+.passaporte-header > span {
+color: #b76e88;
+font-size: 12px;
+font-weight: bold;
+letter-spacing: 2px;
+}
+
+.passaporte-header h2 {
+margin: 14px 0;
+font-size: clamp(28px, 5vw, 40px);
+}
+
+.passaporte-header p {
+color: #74768a;
+line-height: 1.8;
+}
+
+.destinos-grid {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+max-width: 950px;
+margin: 0 auto;
+}
+
+.destino-card {
+background: white;
+border-radius: 18px;
+overflow: hidden;
+box-shadow: 0 8px 25px rgba(50, 55, 90, 0.08);
+border: 1px solid #f0e7ed;
+}
+
+.destino-card summary {
+list-style: none;
+cursor: pointer;
+padding-bottom: 22px;
+}
+
+.destino-card summary::-webkit-details-marker {
+display: none;
+}
+
+.destino-imagem {
+height: 150px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 58px;
+}
+
+.paris {
+background: linear-gradient(135deg, #f9dce6, #f9eee7);
+}
+
+.maldivas {
+background: linear-gradient(135deg, #c9f0f0, #e2f8ff);
+}
+
+.japao {
+background: linear-gradient(135deg, #f8dce8, #fbeee8);
+}
+
+.bali {
+background: linear-gradient(135deg, #d7eedc, #f0f5df);
+}
+
+.destino-card h3 {
+margin: 20px 18px 5px;
+font-size: 21px;
+}
+
+.destino-card summary p {
+margin: 0 18px 17px;
+color: #7a7c8d;
+font-size: 14px;
+}
+
+.abrir {
+display: inline-block;
+margin: 0 18px;
+color: #ad637e;
+font-size: 14px;
+font-weight: bold;
+}
+
+.destino-card summary:hover .abrir {
+color: #85445e;
+}
+
+.destino-card[open] .abrir {
+font-size: 0;
+}
+
+.destino-card[open] .abrir::after {
+content: "Fechar passaporte −";
+font-size: 14px;
+}
+
+.destino-detalhes {
+padding: 18px;
+background: #fff8fa;
+border-top: 1px solid #f0e3e9;
+line-height: 1.7;
+font-size: 14px;
+color: #626579;
+}
+
+.destino-detalhes h4 {
+color: #ad637e;
+font-size: 16px;
+margin: 0 0 12px;
+}
+
+.passaporte-final {
+max-width: 650px;
+margin: 35px auto 0;
+padding: 20px;
+border-radius: 15px;
+background: white;
+text-align: center;
+color: #ad637e;
+line-height: 1.8;
+font-weight: bold;
+}
+
+@media (max-width: 600px) {
+.passaporte {
+padding: 45px 15px;
+}
+
+.destinos-grid {
+grid-template-columns: 1fr;
+gap: 18px;
+}
+
+.destino-imagem {
+height: 135px;
+}
+
 
 .lista{
     font-style: italic;
