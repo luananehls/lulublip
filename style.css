@@ -83,7 +83,7 @@ h1, h2 {
 /* PASSAPORTE DOS SONHOS */
 .passaporte {
     padding: 65px 20px;
-    background: linear-gradient(135deg, #fff7f8, #f3f6ff);
+    background: linear-gradient(186, 232, 232);
     color: #34364f;
 }
 
@@ -215,7 +215,7 @@ h1, h2 {
     margin: 35px auto 0;
     padding: 20px;
     border-radius: 15px;
-    background: white;
+    background: rgb(186, 232, 232);
     text-align: center;
     color: #ad637e;
     line-height: 1.8;
