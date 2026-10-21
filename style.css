@@ -373,3 +373,106 @@ button:focus-visible,
         padding: 17px;
     }
 }
+
+
+:root {
+    --azul-claro: #BAE8E8;
+    --azul-petroleo: #155E63;
+    --branco: #FFFFFF;
+    --dourado: #E9B872;
+    --texto: #344B50;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    color: var(--texto);
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+}
+
+/* Título principal */
+body > h1 {
+    margin: 0;
+    padding: 35px 20px 20px;
+    color: var(--azul-petroleo);
+    font-size: clamp(30px, 5vw, 46px);
+}
+
+/* Menu atual */
+.lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin: 0;
+    padding: 15px 20px;
+    list-style: none;
+    background: var(--branco);
+}
+
+.lista li {
+    padding: 8px 13px;
+    border-radius: 20px;
+    color: var(--azul-petroleo);
+    font-size: 14px;
+    font-style: normal;
+    transition: background 0.2s ease;
+}
+
+.lista li:hover {
+    background: var(--azul-claro);
+}
+
+/* Textos gerais antes dos passaportes */
+body > p {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 0 24px;
+    text-align: center;
+    font-size: 17px;
+}
+
+/* Títulos das seções gerais */
+body > h2 {
+    margin: 45px auto 15px;
+    padding: 0 20px;
+    color: var(--azul-petroleo);
+    font-size: clamp(24px, 4vw, 34px);
+}
+
+/* Imagens fora dos passaportes */
+body > img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ajustes para celular */
+@media (max-width: 600px) {
+    body > h1 {
+        padding: 25px 15px 15px;
+    }
+
+    .lista {
+        gap: 5px;
+        padding: 12px;
+    }
+
+    .lista li {
+        padding: 7px 10px;
+        font-size: 13px;
+    }
+
+    body > p {
+        margin: 22px auto;
+        font-size: 15px;
+    }
+
+    body > h2 {
+        margin-top: 32px;
+    }
+}
+
