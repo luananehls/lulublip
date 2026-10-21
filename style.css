@@ -262,38 +262,34 @@ button:focus-visible,
     }
 }
 
-/* Área branca para o texto dos destinos */
-.destino-conteudo {
-    background: #ffffff;
-    padding: 20px;
-    text-align: left;
+/* PASSAPORTES DOS DESTINOS */
+.passaporte,
+.passaporte * {
+    box-sizing: border-box;
 }
 
-.destino-conteudo h3 {
-    margin: 0 0 6px;
-    font-size: 22px;
-    color: #34364f;
+.destinos-grid {
+    align-items: start;
 }
 
-.destino-conteudo p {
-    margin: 10px 0;
-    color: #626579;
-    line-height: 1.7;
+.destino-card {
+    min-width: 0;
+    align-self: start;
 }
 
-.destino-conteudo .subtitulo {
-    color: #ad637e;
-    font-weight: bold;
-    font-size: 14px;
+.destino-card summary {
+    display: block;
+    padding: 0;
+    cursor: pointer;
+    list-style: none;
 }
 
-.destino-conteudo .abrir {
-    display: inline-block;
-    margin: 12px 0 0;
+.destino-card summary::-webkit-details-marker {
+    display: none;
 }
 
-/* Foto ocupando toda a largura */
 .destino-imagem {
+    width: 100%;
     height: 190px;
     overflow: hidden;
 }
@@ -305,14 +301,75 @@ button:focus-visible,
     object-fit: cover;
 }
 
-/* Ajuste para celular */
+.destino-conteudo {
+    padding: 20px;
+    background: #ffffff;
+    text-align: left;
+}
+
+.destino-conteudo h3 {
+    margin: 0 0 8px;
+    color: #34364f;
+    font-size: 22px;
+}
+
+.destino-conteudo p {
+    margin: 10px 0;
+    color: #626579;
+    line-height: 1.7;
+    overflow-wrap: break-word;
+}
+
+.destino-conteudo .subtitulo {
+    color: #ad637e;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.destino-conteudo .abrir {
+    display: inline-block;
+    margin: 12px 0 0;
+    color: #ad637e;
+    font-weight: bold;
+}
+
+.destino-card summary:hover .abrir {
+    color: #85445e;
+}
+
+.destino-card[open] .abrir {
+    font-size: 0;
+}
+
+.destino-card[open] .abrir::after {
+    content: "Fechar passaporte −";
+    font-size: 14px;
+}
+
+.destino-detalhes {
+    padding: 20px;
+    background: #fff8fa;
+    border-top: 1px solid #f0e3e9;
+    color: #626579;
+    line-height: 1.7;
+    overflow-wrap: break-word;
+}
+
+.destino-detalhes h4 {
+    margin-top: 0;
+    color: #ad637e;
+}
+
 @media (max-width: 600px) {
+    .destinos-grid {
+        grid-template-columns: 1fr;
+    }
+
     .destino-imagem {
-        height: 165px;
+        height: 175px;
     }
 
     .destino-conteudo {
         padding: 17px;
     }
 }
-
