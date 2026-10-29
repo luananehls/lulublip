@@ -474,5 +474,249 @@ body > img {
     body > h2 {
         margin-top: 32px;
     }
+
+/* MAPA DOS SONHOS — MAPA-MÚNDI */
+
+.mapa-sonhos {
+  --mapa-fundo: #faf8f3;
+  --mapa-texto: #292b28;
+  --mapa-dourado: #aa8954;
+  --mapa-linha: #e8e1d5;
+
+  padding: 76px 6%;
+  background: var(--mapa-fundo);
+  color: var(--mapa-texto);
+  font-family: inherit;
 }
 
+.mapa-cabecalho {
+  max-width: 720px;
+  margin: 0 auto 38px;
+  text-align: center;
+}
+
+.mapa-etiqueta {
+  color: var(--mapa-dourado);
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.mapa-cabecalho h2 {
+  margin: 14px 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(29px, 4vw, 44px);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.mapa-cabecalho p {
+  color: #77766f;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.mapa-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(260px, 0.8fr);
+  gap: 25px;
+  max-width: 1250px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.mapa-painel,
+.mapa-lista {
+  min-width: 0;
+  background: #fffefa;
+  border: 1px solid var(--mapa-linha);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.mapa-painel-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--mapa-linha);
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+.mapa-status {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #77766f;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.mapa-ponto {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--mapa-dourado);
+}
+
+#mapa-mundi {
+  height: 440px;
+  width: 100%;
+  background: #eeeee8;
+  z-index: 1;
+}
+
+.mapa-legenda {
+  padding: 0 20px 12px;
+  color: #77766f;
+  font-size: 12px;
+}
+
+.mapa-lista {
+  padding: 27px 22px;
+}
+
+.mapa-lista h3 {
+  font: 400 25px/1.3 Georgia, "Times New Roman", serif;
+  margin: 12px 0 8px;
+}
+
+.mapa-contador {
+  font-size: 12px;
+  color: #77766f;
+  margin-bottom: 22px;
+}
+
+.mapa-destino {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 17px 0;
+  border-top: 1px solid var(--mapa-linha);
+}
+
+.mapa-destino strong,
+.mapa-destino span {
+  display: block;
+}
+
+.mapa-destino strong {
+  font: 400 17px Georgia, "Times New Roman", serif;
+  margin-bottom: 5px;
+}
+
+.mapa-destino span {
+  color: #77766f;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.mapa-visita {
+  flex-shrink: 0;
+  border: 1px solid #d9c9aa;
+  border-radius: 20px;
+  background: transparent;
+  color: #80663d;
+  padding: 8px 10px;
+  font: inherit;
+  font-size: 10px;
+  cursor: pointer;
+  transition: background .2s, color .2s;
+}
+
+.mapa-visita:hover,
+.mapa-visita[aria-pressed="true"] {
+  background: #aa8954;
+  color: white;
+}
+
+.mapa-link-passaporte {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  padding: 15px 0 0;
+  border-top: 1px solid var(--mapa-linha);
+  color: #80663d;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.mapa-link-passaporte:hover {
+  color: #292b28;
+}
+
+.mapa-popup {
+  font-family: Arial, sans-serif;
+  min-width: 155px;
+  color: #292b28;
+}
+
+.mapa-popup h3 {
+  font: 400 20px Georgia, "Times New Roman", serif;
+  margin: 0 0 7px;
+}
+
+.mapa-popup p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0 0 12px;
+}
+
+.mapa-popup a {
+  color: #80663d;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.mapa-marcador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  background: #aa8954;
+  color: white;
+  border: 3px solid #fffefa;
+  border-radius: 50%;
+  box-shadow: 0 2px 9px #0002;
+  font-size: 12px;
+}
+
+@media (max-width: 800px) {
+  .mapa-layout {
+    grid-template-columns: 1fr;
+  }
+
+  #mapa-mundi {
+    height: 340px;
+  }
+
+  .mapa-sonhos {
+    padding: 52px 5%;
+  }
+}
+
+@media (max-width: 420px) {
+  .mapa-painel-topo {
+    padding: 14px 12px;
+    font-size: 9px;
+  }
+
+  #mapa-mundi {
+    height: 300px;
+  }
+
+  .mapa-lista {
+    padding: 23px 15px;
+  }
+
+  .mapa-visita {
+    padding: 8px;
+  }
+}
