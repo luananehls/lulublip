@@ -1300,3 +1300,37 @@ body > h2:nth-of-type(2) + p {
 #planejamento img {
     display: none !important;
 }
+/* Seção de planejamento */
+#planejamento {
+  max-width: 1176px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+#planejamento h2 {
+  margin: 76px 0 18px;
+  color: var(--texto);
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(29px, 4vw, 43px);
+  font-weight: 400;
+  letter-spacing: -.025em;
+  line-height: 1.25;
+  text-align: left;
+}
+
+#planejamento h2::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 1px;
+  margin-top: 17px;
+  background: var(--dourado);
+}
+
+#planejamento p {
+  margin: 0 0 28px;
+  color: var(--texto-suave);
+  font-size: 15px;
+  line-height: 1.95;
+  text-align: left;
+}
