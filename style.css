@@ -574,25 +574,6 @@ body > h1::after {
   border-color: var(--dourado-claro);
 }
 
-/* DESTAQUE INICIAL */
-
-body > p:first-of-type {
-  min-height: 380px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0;
-  padding: 70px max(8%, calc((100% - 1050px) / 2));
-  background:
-    linear-gradient(90deg, rgba(28,29,25,.58), rgba(28,29,25,.12)),
-    url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=2000&q=85')
-    center 52% / cover;
-  color: #fffdf7;
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: clamp(24px, 3.4vw, 39px);
-  line-height: 1.5;
-}
-
 /* TÍTULOS DAS SEÇÕES */
 
 body > h2 {
