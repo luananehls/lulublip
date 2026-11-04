@@ -1287,3 +1287,12 @@ body > h2:nth-of-type(2) + p {
 body > h2 {
     text-align: center;
 }
+.imagem-introducao {
+  display: block;
+  width: 85%;
+  max-width: 1100px;
+  height: 380px;
+  object-fit: cover;
+  margin: 25px auto;
+  border-radius: 15px;
+}
