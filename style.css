@@ -1285,3 +1285,18 @@ body {
     font-size: 15px;
   }
 }
+/* Remove a imagem apenas da seção Planejamento */
+body > h2:nth-of-type(2) + p + img.primeira {
+    display: none !important;
+}
+
+body > h2:nth-of-type(2) + p {
+    background-image: none !important;
+}
+#planejamento {
+    background-image: none !important;
+}
+
+#planejamento img {
+    display: none !important;
+}
