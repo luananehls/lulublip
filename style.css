@@ -984,4 +984,52 @@ button:focus-visible,
   .destino-detalhes {
     padding: 20px;
   }
+}/* Deixar a versão do computador parecida com a do celular */
+@media (min-width: 601px) {
+    body {
+        background-color: #f7f3e9;
+    }
+
+    h1 {
+        background-color: #f7f3e9;
+        color: #171717;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 58px;
+        font-style: italic;
+        text-align: center;
+        padding: 55px 20px 25px;
+        margin: 0;
+    }
+
+    .lista {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px 35px;
+        background-color: #faf9f5;
+        padding: 30px 40px;
+        margin: 0;
+    }
+
+    .lista li {
+        list-style: none;
+        font-size: 16px;
+        color: #777;
+        text-align: center;
+    }
+
+    body > p {
+        background:
+            linear-gradient(rgba(30, 30, 25, 0.45), rgba(30, 30, 25, 0.45)),
+            url("images/sua-imagem.jpg") center/cover no-repeat;
+        color: white;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 32px;
+        line-height: 1.6;
+        text-align: center;
+        padding: 75px 50px;
+        margin: 0;
+    }
 }
+    
+    
