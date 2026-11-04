@@ -1079,7 +1079,7 @@ body {
 
 .botao-hero {
   display: inline-block;
-  color: #fffefa;
+  color: #e7dcb4;
   border: 2px solid #d7ad5b;
   border-radius: 40px;
   padding: 13px 28px;
@@ -1456,5 +1456,48 @@ body > h2 {
 
   .imagem-introducao {
     height: 240px;
+  }
+}
+.hero-imagem {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.hero-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-texto {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-texto h2 {
+  max-width: 850px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(30px, 5vw, 54px);
+  line-height: 1.2;
+}
+
+.hero-texto p {
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .hero-imagem {
+    height: 380px;
   }
 }
