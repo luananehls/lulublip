@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap');
+
 body{
     background-color: rgb(186, 232, 232);
      text-align: center;
@@ -469,9 +471,7 @@ body > img {
     body > h2 {
         margin-top: 32px;
     }
-}
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap');
+  }
 
 /* ==================================
    MAPA DOS SONHOS
@@ -537,7 +537,6 @@ body > h1::after {
 }
 
 /* MENU */
-
 .lista {
   position: sticky;
   top: 0;
@@ -550,12 +549,14 @@ body > h1::after {
   margin: 0;
   padding: 14px 18px;
   list-style: none;
-  background: rgba(252, 250, 246, .96);
+  background: rgba(226, 202, 155, 0.96);
   border-top: 1px solid var(--linha);
   border-bottom: 1px solid var(--linha);
   backdrop-filter: blur(14px);
-  .lista a {
-      font-size: 16px;
+}
+
+.lista a {
+  font-size: 16px;
 }
 
 .lista li {
