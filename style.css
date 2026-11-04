@@ -1221,3 +1221,25 @@ body {
     padding: 11px 22px;
   }
 }
+.introducao-destinos {
+  text-align: center;
+  padding: 45px 20px 35px;
+  background-color: #fcfaf6;
+}
+
+.introducao-destinos h2 {
+  margin: 0 0 18px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 42px;
+  font-weight: 500;
+  color: #4a252b;
+}
+
+.introducao-destinos p {
+  max-width: 780px;
+  margin: 0 auto;
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.8;
+  color: #5f5550;
+}
