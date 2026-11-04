@@ -469,6 +469,7 @@ body > img {
     body > h2 {
         margin-top: 32px;
     }
+}
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap');
 
@@ -984,52 +985,67 @@ button:focus-visible,
   .destino-detalhes {
     padding: 20px;
   }
-}/* Deixar a versão do computador parecida com a do celular */
-@media (min-width: 601px) {
+}
+/* MESMO VISUAL DO CELULAR NO COMPUTADOR */
+@media (min-width: 761px) {
     body {
-        background-color: #f7f3e9;
+        background: var(--creme);
     }
 
-    h1 {
-        background-color: #f7f3e9;
-        color: #171717;
-        font-family: Georgia, "Times New Roman", serif;
+    body > h1 {
+        padding: 55px 20px 25px;
+        background: var(--creme);
+        color: var(--texto);
+        font-family: 'Playfair Display', Georgia, serif;
         font-size: 58px;
+        font-weight: 400;
         font-style: italic;
         text-align: center;
-        padding: 55px 20px 25px;
-        margin: 0;
+    }
+
+    body > h1::after {
+        content: 'JOURNEYS • MOMENTS • MEMORIES';
+        display: block;
+        margin-top: 17px;
+        color: var(--dourado);
+        font-family: 'DM Sans', sans-serif;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: .25em;
     }
 
     .lista {
+        position: relative;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 25px 35px;
-        background-color: #faf9f5;
-        padding: 30px 40px;
-        margin: 0;
+        gap: 5px;
+        padding: 14px 18px;
+        background: var(--creme-claro);
     }
 
     .lista li {
-        list-style: none;
-        font-size: 16px;
-        color: #777;
-        text-align: center;
+        padding: 7px 12px;
+        color: var(--texto-suave);
+        font-size: 11px;
+        font-style: normal;
     }
 
-    body > p {
-        background:
-            linear-gradient(rgba(30, 30, 25, 0.45), rgba(30, 30, 25, 0.45)),
-            url("images/sua-imagem.jpg") center/cover no-repeat;
-        color: white;
-        font-family: Georgia, "Times New Roman", serif;
-        font-size: 32px;
-        line-height: 1.6;
-        text-align: center;
-        padding: 75px 50px;
+    body > p:first-of-type {
+        min-height: 380px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         margin: 0;
+        padding: 70px 8%;
+        background:
+            linear-gradient(90deg, rgba(28,29,25,.58), rgba(28,29,25,.12)),
+            url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=2000&q=85')
+            center 52% / cover no-repeat;
+        color: #fffdf7;
+        font-family: 'Playfair Display', Georgia, serif;
+        font-size: 36px;
+        line-height: 1.5;
+        text-align: center;
     }
 }
-    
-    
