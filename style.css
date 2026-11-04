@@ -1031,9 +1031,12 @@ body {
 }
 
 .cabecalho {
-  background-color: #f7f4ed;
-  text-align: center;
-  padding: 45px 20px 25px;
+    background:
+        linear-gradient(rgba(30, 25, 20, 0.35), rgba(30, 25, 20, 0.35)),
+        url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=2000&q=85")
+        center/cover no-repeat;
+    text-align: center;
+    padding: 65px 20px;
 }
 
 .cabecalho h1 {
